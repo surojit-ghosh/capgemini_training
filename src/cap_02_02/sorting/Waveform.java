@@ -4,11 +4,8 @@ import java.util.Arrays;
 
 public class Waveform {
 //    Waveform sorted array
-    //int[] arr = {10, 5,  3, 2, 20, 100,70,80}
-//
-//    Waveform sorted array:
-//
-//            10 5 3 2 100 20 80 70
+//    int[] arr = {10, 5,  3, 2, 20, 100,70,80}
+//    Waveform sorted array: 10 5 3 2 100 20 80 70
 
     public static void waveformSort(int[] array) {
         boolean less = true;
