@@ -1,4 +1,0 @@
-- [ ] Functional interfaces
-- [ ] Lambda expressions
-- [ ] Method references
-- [ ] types of functional interfaces
