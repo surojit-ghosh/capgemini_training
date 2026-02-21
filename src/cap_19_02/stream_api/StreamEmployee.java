@@ -12,7 +12,7 @@ public class StreamEmployee {
         employees.add(new Employee("Alice", 50000, 30, "alice@gmail.com",
                 LocalDate.of(1990, 1, 1),
                 LocalDate.of(2015, 1, 1),
-                "1234567890", "123 Main St", "Female"));
+                "1234567890", "123 cap_21_02.buffer.Main St", "Female"));
 
         employees.add(new Employee("Bob", 70000, 35, "bob@gmail.com",
                 LocalDate.of(1988, 5, 10),

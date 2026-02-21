@@ -27,9 +27,7 @@ public class InputOutput {
         Thread thread1 = new Thread(() -> {
             try {
                 readAndWrite.readData();
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            } catch (InterruptedException e) {
+            } catch (IOException | InterruptedException e) {
                 throw new RuntimeException(e);
             }
         });
