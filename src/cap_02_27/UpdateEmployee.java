@@ -21,14 +21,14 @@ public class UpdateEmployee {
 
 
             // 4.create query
-            String query="update employeeemp set email=? where id=?;";
+            String query = "update employeeemp set email=? where id=?;";
 
 
             // 3.create statement
             PreparedStatement ps = connection.prepareStatement(query);
 
             ps.setString(1, "any@gmail.com");
-            ps.setInt(2,1);
+            ps.setInt(2, 1);
 
             int executeUpdate = ps.executeUpdate();
             System.out.println(executeUpdate);
@@ -37,8 +37,7 @@ public class UpdateEmployee {
 
             System.out.println("employee data successful.");
 
-        }catch(ClassNotFoundException | SQLException e)
-        {
+        } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
     }
