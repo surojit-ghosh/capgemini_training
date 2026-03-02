@@ -1,0 +1,5 @@
+**POJO Class**: A Plain Old Java Object (POJO) class is a simple Java class that does not have any special restrictions or requirements. It is used to represent entities in Hibernate and can be mapped to a database table using annotations or XML configuration.
+
+**JAVA Bean**: A Java Bean is a specific type of POJO that follows certain conventions, such as having a no-argument constructor, providing getter and setter methods for its properties, and being serializable. Java Beans are often used in Java applications to encapsulate data and provide a standard way to access and manipulate that data.
+
+**Why use java bean class**: Java Beans provide a standard way to encapsulate data and provide access to that data through getter and setter methods. This allows for better organization and modularity in your code, as well as making it easier to work with frameworks like Hibernate that rely on Java Beans for mapping entities to database tables. Additionally, using Java Beans can help improve code readability and maintainability by providing a clear structure for your classes and their properties.
