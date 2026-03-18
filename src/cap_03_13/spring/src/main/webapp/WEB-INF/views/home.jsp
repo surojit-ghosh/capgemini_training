@@ -3,14 +3,12 @@
 <html>
 <head>
     <title>Home Page</title>
-
     <link rel="stylesheet" href="/css/styles.css">
-
 </head>
+
 <body>
 
 <header class="navbar">
-
     <div class="logo">
         Capgemini
     </div>
@@ -27,8 +25,6 @@
     <div class="nav-btn">
         <button>Login</button>
     </div>
-
 </header>
-
 </body>
 </html>
