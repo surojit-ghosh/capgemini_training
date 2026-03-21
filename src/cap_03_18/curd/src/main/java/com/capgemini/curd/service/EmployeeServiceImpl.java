@@ -4,7 +4,7 @@ import com.capgemini.curd.dto.AddressDTO;
 import com.capgemini.curd.dto.EmployeeDTO;
 import com.capgemini.curd.entity.Address;
 import com.capgemini.curd.entity.Employee;
-import com.capgemini.curd.repository.EmployeeRepositry;
+import com.capgemini.curd.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +14,7 @@ import java.util.List;
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
     @Autowired
-    private EmployeeRepositry employeeRepositry;
+    private EmployeeRepository employeeRepositry;
 
     @Override
     public String saveEmployee(EmployeeDTO employeeDTO) {
@@ -31,19 +31,17 @@ public class EmployeeServiceImpl implements EmployeeService {
 
         List<AddressDTO> addresses = employeeDTO.getAddresses();
         System.out.println(addresses);
-//        if (addresses != null) {
-            for (AddressDTO address : addresses) {
-                Address addressEntity = Address.builder()
-                        .street(address.getStreet())
-                        .city(address.getCity())
-                        .state(address.getState())
-                        .country(address.getCountry())
-                        .employee(employee)
-                        .build();
+        for (AddressDTO address : addresses) {
+            Address addressEntity = Address.builder()
+                    .street(address.getStreet())
+                    .city(address.getCity())
+                    .state(address.getState())
+                    .country(address.getCountry())
+                    .employee(employee)
+                    .build();
 
-                addressList.add(addressEntity);
-            }
-//        }
+            addressList.add(addressEntity);
+        }
 
         employee.setAddresses(addressList);
 
